@@ -1,0 +1,503 @@
+/* Start Global Rules */
+:root {
+    --font-family:'Lato', sans-serif;
+    --primary-color:#FF2B06;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    background-color: #010101;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-tedx h2,
+.upcoming-tedx h3,
+.speakers h4,
+.sponsors h5
+{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.56rem;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 3.5rem;
+}
+@media (max-width:676px) {
+    .container {
+        width: calc(100% + 10px);
+        transition: 0.3s;
+        align-items: center;
+    }
+}
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+        transition: 0.3s;
+    }
+}
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+        transition: 0.3s;
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+        transition: 0.3s;
+    }
+}
+/* End Global Rules */
+/* Start Header */
+header {
+    padding: 20px;
+}
+header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    width: 200px;
+    height: 100px;
+}
+header .navbar-menu ul {
+    display: none;
+}
+header .navbar-menu .menu-toggle {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+header .navbar-menu .menu-toggle span {
+    height: 2px;
+    background-color: #f6f6f6;
+    margin-bottom: 5px;
+}
+header .navbar-menu .menu-toggle span:first-child{
+    width: 100%;
+}
+header .navbar-menu .menu-toggle span:nth-child(2){
+    width: 60%;
+    transition: .3s;
+}
+header .navbar-menu .menu-toggle span:last-child {
+    width: 100%;
+}
+header .navbar-menu ul li {
+    padding: 15px;
+}
+header .navbar-menu ul li a {
+    color: white;
+}
+@media (max-width:991px){
+    header .navbar-menu {
+        position: relative;
+    }
+    header .navbar-menu:hover ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: #f6f6f6;
+        position: absolute;
+        min-width: 200px;
+        transform: translate(-170px, 15px);
+    }
+    header .navbar-menu ul::before {
+        content: "";
+        position: absolute;
+        border-width: 10px;
+        border-color: transparent transparent #f6f6f6 transparent;
+        border-style: solid;
+        transform: translate(85px,-20px);
+    }
+    header .navbar-menu:hover .menu-toggle span:nth-child(2) {
+        width: 100%;
+    }
+    header .navbar-menu ul li {
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+    }
+    header .navbar-menu ul li:not(:last-child) {
+        border-bottom: 1px solid #e4e3e3;
+    }
+    header .navbar-menu ul li:hover {
+        background-color:#e4e3e3;
+        padding-left: 25px;
+    }
+    header .navbar-menu ul li a{
+        color: #8d8d8d;
+        transition: 0.3s;
+    }
+}   
+@media (min-width:992px) {
+    header .navbar-menu .menu-toggle {
+        display: none;
+    }
+    header .navbar-menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+    header .navbar-menu ul li:hover {
+        background-color: var(--primary-color);
+        border-radius: 10px;
+    }
+}
+/* End Header */
+/* Start Landing */
+.landing {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.landing .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.landing .intro-text {
+    display: flex;
+    flex-direction: column;
+}
+.intro-text h1 {
+    flex-wrap: nowrap;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.8rem;
+    color: #FFFFFF;
+    margin-top: 5rem;
+    max-width: 100%;
+}
+.intro-text p {
+    font-family: var(--font-family);
+    width: 70%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 180%;
+    color: #828282;
+    max-width: 100%;
+    text-align: justify;
+}
+.intro-text .btn {
+    width: 180px;
+    height: 48px;
+    color: var(--primary-color);
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 180%;
+    border: 1px solid var(--primary-color);
+    margin-top: 2rem;
+    border-radius: 2rem;
+}
+.intro-vector img {
+    width: 450px;
+    height: 484px;
+}
+@media (max-width:767px){
+    .landing {
+        padding: 2rem 1rem;
+    }
+    .landing .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .landing .intro-text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+    }
+    .intro-text h1 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+        white-space: nowrap;
+    }
+    .intro-text p {
+        width: 100%;
+    }
+    .intro-text .btn {
+        margin-bottom: 2rem;
+    }
+    .intro-vector img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .landing .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+    .intro-text h1 {
+        text-align: center;
+    }
+    .intro-text p {
+        width: 100%;
+    }
+    .intro-text .btn {
+        align-self: center;
+        margin-bottom: 4rem;
+    }
+}
+@media (min-width:992px){
+
+    
+}
+@media (min-width:1200px){}
+/* End Landing */
+/* Start About */
+.about-tedx {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.about-tedx .container{
+    display: flex;
+    flex-direction: column;
+}
+.about-tedx .about-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-tedx .about-text p {
+    font-family: var(--font-family);
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #828282;
+    max-width: 545px;
+    text-align: justify;
+}
+.about-tedx .about-img img {
+    width: 400px;
+    height: 300px;
+    border: 4px solid rgba(255, 43, 6, 0.8);
+    border-radius: 24px;
+}
+@media (max-width:767px){
+    .about-tedx .about-text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-tedx .about-text p {
+        margin-bottom: 2rem;
+    }
+    .about-tedx .about-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (min-width:768px){
+    .about-tedx .about-text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-tedx .about-text p {
+        max-width: 100%;
+    }
+    .about-tedx .about-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (min-width:992px){
+    .about-tedx .about-text {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .about-tedx .about-text p {
+        padding-right: 2rem;
+    }
+    .about-tedx .about-img img {
+        align-self: flex-start;
+    }
+}
+@media (min-width:1190px){}
+/* End About */
+/* Start Upcoming */
+.upcoming-tedx {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.upcoming-tedx .container {
+    display: flex;
+    flex-direction: column;
+}
+.upcoming-tedx .upcoming-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.upcoming-tedx .upcoming-content .upcoming-img {
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+}
+.upcoming-tedx .upcoming-content .upcoming-img img {
+    width: 346px;
+    height: 230px;
+}
+.upcoming-tedx .upcoming-content .upcoming-text h4 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.55rem;
+    line-height: 2.25rem;
+    color: #FFFFFF;
+}
+.upcoming-tedx .upcoming-content .upcoming-text p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #828282;
+    max-width: 526px;
+    text-align: justify;
+    margin-top: 0;
+}
+.upcoming-tedx .upcoming-content .upcoming-text p:nth-child(3),
+.upcoming-tedx .upcoming-content .upcoming-text p:last-child {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color: #FFFFFF;
+}
+@media (max-width:767px) {
+    .upcoming-tedx .upcoming-content {
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+    .upcoming-tedx .upcoming-content .upcoming-img img{
+        width: 100%;
+    }
+    .upcoming-tedx .upcoming-content .upcoming-text {
+        text-align: center;
+    }
+    .upcoming-tedx .upcoming-content .upcoming-text p:not(.first){
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) {
+    .upcoming-tedx .upcoming-content .upcoming-text{
+        margin-left: 15px;
+    }
+    .upcoming-tedx .upcoming-content .upcoming-img{
+        margin-right: 15px;
+    }
+}
+
+@media (min-width:992px) {}
+
+@media (min-width:1190px) {}
+/* End Upcoming */
+/* Start Speakers */
+.speakers{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.speakers .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+}
+.speakers .speakers-slide {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, minmax(160px,1fr));
+}
+.speakers-slide .speaker-1,
+.speakers-slide .speaker-2,
+.speakers-slide .speaker-3,
+.speakers-slide .speaker-4,
+.speakers-slide .speaker-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.speakers-slide .speaker-1 img,
+.speakers-slide .speaker-2 img,
+.speakers-slide .speaker-3 img,
+.speakers-slide .speaker-4 img,
+.speakers-slide .speaker-5 img {
+    width: 160px;
+    height: 160px;
+    border: 4px solid rgba(255, 43, 6, 0.6); 
+    box-shadow: 0px 18px 50px -15px rgba(0, 0, 0, 0.22);
+    border-radius: 30px;
+}
+.speakers-slide .speaker-1 p,
+.speakers-slide .speaker-2 p,
+.speakers-slide .speaker-3 p,
+.speakers-slide .speaker-4 p,
+.speakers-slide .speaker-5 p {
+    color: white;
+    margin: .2rem;
+}
+.speakers-slide .speaker-1 p:last-of-type,
+.speakers-slide .speaker-2 p:last-of-type,
+.speakers-slide .speaker-3 p:last-of-type,
+.speakers-slide .speaker-4 p:last-of-type,
+.speakers-slide .speaker-5 p:last-of-type {
+    color: #FF2B06;
+}
+.speakers-slide .social-icons {
+    color: white;
+}
+/* End Speakers */
+/* Start Sponsors */
+.sponsors {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.sponsors .sponsors-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, minmax(100px,1fr));
+}
+.sponsors .sponsors-list img {
+    width: 120px;
+    height: 120px;
+}
+
+/* End Sponsors */
