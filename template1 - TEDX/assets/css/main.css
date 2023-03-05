@@ -566,7 +566,7 @@ footer {
 }
 footer .container {
     display: grid;
-    justify-items: flex-start;
+    justify-content: space-evenly;
 }
 footer .footer-content {
     display: flex;
@@ -629,7 +629,7 @@ footer .footer-content .footer-social-links i {
 @media (min-width:992px) {
     footer .footer-content .footer-div {
         justify-content: space-between;
-        padding: 1.5rem;
+        padding: 3.5rem;
     }
     footer .footer-content h2,
     footer .footer-content ul li,
