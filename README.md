@@ -1,3 +1,5 @@
+ ![Github_All_Releases](https://img.shields.io/badge/-CSS-rgba(38%2C%2077%2C%20228)?style=flat-square&logo=css3)
+![Github_All_Releases](https://img.shields.io/badge/-HTML-rgba(240%2C%20101%2C%2041)?style=flat-square&logo=html5&logoColor=white)
 # TEDx Template project
 
 This project for TEDx Debrecen University website, clone the design from figma [https://www.figma.com/file/xULQzLcqGlpvJgJvvL1w69/TEDx-website-(Community)?t=J8BV87EvsgyRgg02-0] 
