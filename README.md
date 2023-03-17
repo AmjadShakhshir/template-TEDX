@@ -14,7 +14,7 @@ This project for TEDx Debrecen University website, clone the design from figma [
 ## Overview
 ### Screenshot
 
-![image]()
+![image](https://github.com/JoniShiro/template-TEDX/blob/master/Tedx-screenshot.png)
 
 ## My process
 
