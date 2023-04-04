@@ -35,6 +35,6 @@ I'm planning to continue reviewing and refining my css code and try to add more 
 
 ## Author
 
-- Website - [Amjad Shakhshir](https://www.amjadshakhshir.com)
+- Website portfolio - [Amjad Shakhshir](https://www.amjadshakhshir.com)
 
 
