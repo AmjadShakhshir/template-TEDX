@@ -118,6 +118,10 @@ header .navbar-menu .menu-toggle span:last-child {
   border-radius: 2rem;
   cursor: pointer;
 }
+.intro-text .btn:hover {
+  background-color: #FF2B06;
+  color: #FFFFFF;
+}
 
 .intro-vector img {
   width: 400px;
@@ -326,7 +330,7 @@ header .navbar-menu .menu-toggle span:last-child {
   margin: 0.2rem;
 }
 .speakers-slide .speaker-1 p:last-of-type {
-  color: #FF2B06;
+  color: #FFFFFF;
 }
 .speakers-slide .speaker-2 {
   display: flex;
@@ -346,7 +350,7 @@ header .navbar-menu .menu-toggle span:last-child {
   margin: 0.2rem;
 }
 .speakers-slide .speaker-2 p:last-of-type {
-  color: #FF2B06;
+  color: #FFFFFF;
 }
 .speakers-slide .speaker-3 {
   display: flex;
@@ -366,7 +370,7 @@ header .navbar-menu .menu-toggle span:last-child {
   margin: 0.2rem;
 }
 .speakers-slide .speaker-3 p:last-of-type {
-  color: #FF2B06;
+  color: #FFFFFF;
 }
 .speakers-slide .speaker-4 {
   display: flex;
@@ -386,7 +390,7 @@ header .navbar-menu .menu-toggle span:last-child {
   margin: 0.2rem;
 }
 .speakers-slide .speaker-4 p:last-of-type {
-  color: #FF2B06;
+  color: #FFFFFF;
 }
 .speakers-slide .speaker-5 {
   display: flex;
@@ -406,7 +410,7 @@ header .navbar-menu .menu-toggle span:last-child {
   margin: 0.2rem;
 }
 .speakers-slide .speaker-5 p:last-of-type {
-  color: #FF2B06;
+  color: #FFFFFF;
 }
 .speakers-slide .social-icons {
   color: #FFFFFF;

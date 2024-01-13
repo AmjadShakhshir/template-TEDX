@@ -48,6 +48,10 @@
 		border-radius: 2rem;
 		cursor: pointer;
 	}
+	.btn:hover {
+		background-color: colors.$color_primary;
+		color: colors.$color_white;
+	}
 }
 .intro-vector {
 	img {
