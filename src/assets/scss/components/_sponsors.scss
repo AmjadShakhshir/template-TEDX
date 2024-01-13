@@ -12,6 +12,14 @@
 	padding-top: 6rem;
 	padding-bottom: 6rem;
 	margin-bottom: 6rem;
+	transition: 0.5s ease-in;
+		z-index: 0;
+
+		&:hover {
+			z-index: 1;
+			left: 30px;
+			margin-top: -10px;		
+		}
 	.sponsors-list {
 		display: grid;
 		gap: 1rem;

@@ -8,6 +8,7 @@ This project for TEDx Debrecen University website, clone the design from figma [
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
+  - [Live Preview](#live)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Continued development](#continued-development)
@@ -18,12 +19,15 @@ This project for TEDx Debrecen University website, clone the design from figma [
 
 ![image](https://github.com/JoniShiro/template-TEDX/blob/master/Tedx-screenshot.png)
 
+### Live Preview
+[link](tedx.website)
+
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SCSS Custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow

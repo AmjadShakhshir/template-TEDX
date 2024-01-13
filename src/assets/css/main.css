@@ -92,6 +92,13 @@ header .navbar-menu .menu-toggle span:last-child {
   color: #FFFFFF;
   margin-top: 5rem;
   max-width: 100%;
+  transition: 0.5s ease-in-out;
+  z-index: 0;
+}
+.intro-text h1:hover {
+  z-index: 1;
+  left: 30px;
+  margin-top: -10px;
 }
 .intro-text p {
   font-family: "Lato", sans-serif;
@@ -190,6 +197,13 @@ header .navbar-menu .menu-toggle span:last-child {
 .about-tedx .container {
   display: flex;
   flex-direction: column;
+  transition: 0.5s ease-in-out;
+  z-index: 0;
+}
+.about-tedx .container:hover {
+  z-index: 1;
+  left: 30px;
+  margin-top: -10px;
 }
 .about-tedx .about-text {
   display: grid;
@@ -230,6 +244,13 @@ header .navbar-menu .menu-toggle span:last-child {
 .upcoming-tedx .container {
   display: flex;
   flex-direction: column;
+  transition: 0.5s ease-out;
+  z-index: 0;
+}
+.upcoming-tedx .container:hover {
+  z-index: 1;
+  left: 30px;
+  margin-top: -10px;
 }
 .upcoming-tedx .upcoming-content {
   display: flex;
@@ -298,6 +319,13 @@ header .navbar-menu .menu-toggle span:last-child {
   color: #FFFFFF;
   text-align: center;
   padding-bottom: 3.5rem;
+  transition: 0.5s ease;
+  z-index: 0;
+}
+.speakers h4:hover {
+  z-index: 1;
+  left: 30px;
+  margin-top: -10px;
 }
 .speakers .container {
   display: flex;
@@ -420,6 +448,8 @@ header .navbar-menu .menu-toggle span:last-child {
   padding-top: 6rem;
   padding-bottom: 6rem;
   margin-bottom: 6rem;
+  transition: 0.5s ease-in;
+  z-index: 0;
 }
 .sponsors h5 {
   font-family: "Lato", sans-serif;
@@ -430,6 +460,11 @@ header .navbar-menu .menu-toggle span:last-child {
   color: #FFFFFF;
   text-align: center;
   padding-bottom: 3.5rem;
+}
+.sponsors:hover {
+  z-index: 1;
+  left: 30px;
+  margin-top: -10px;
 }
 .sponsors .sponsors-list {
   display: grid;

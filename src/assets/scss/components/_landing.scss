@@ -22,6 +22,14 @@
 		color: colors.$color_white;
 		margin-top: 5rem;
 		max-width: 100%;
+		transition: 0.5s ease-in-out;
+		z-index: 0;
+
+		&:hover {
+			z-index: 1;
+			left: 30px;
+			margin-top: -10px;		
+		}
 	}
 	p {
 		font-family: fonts.$font-family_1;
