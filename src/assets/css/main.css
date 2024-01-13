@@ -23,32 +23,6 @@ ul {
   margin-right: auto;
 }
 
-/* Start Global Rules */
-/* End Global Rules */
-/* Start Header */
-/* End Header */
-/* Start Nav Bullets */
-/* End Nav Bullets */
-/* Start Landing */
-@keyframes scale {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-/* End Landing */
-/* Start About */
-/* End About */
-/* Start Upcoming */
-/* End Upcoming */
-/* Start Speakers */
-/* End Speakers */
-/* Start Sponsors */
-/* End Sponsors */
-/* Start Footer */
-/* End Footer */
 .about-tedx {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -89,6 +63,14 @@ ul {
   border-radius: 24px;
 }
 
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 .upcoming-tedx {
   padding-top: 6rem;
   padding-bottom: 6rem;
