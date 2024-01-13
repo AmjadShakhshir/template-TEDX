@@ -68,6 +68,107 @@ header .navbar-menu .menu-toggle span:last-child {
   width: 100%;
 }
 
+.landing {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.landing .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.landing .intro-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-text h1 {
+  flex-wrap: nowrap;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.8rem;
+  color: #FFFFFF;
+  margin-top: 5rem;
+  max-width: 100%;
+}
+.intro-text p {
+  font-family: "Lato", sans-serif;
+  width: 70%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 180%;
+  color: #828282;
+  max-width: 100%;
+  text-align: justify;
+}
+.intro-text .btn {
+  width: 180px;
+  height: 48px;
+  color: #FF2B06;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 180%;
+  border: 1px solid #FF2B06;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.intro-vector img {
+  width: 400px;
+  height: 424px;
+  animation: scale 3s ease-in-out infinite;
+}
+
+.nav-bullets {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  z-index: 1000;
+}
+.nav-bullets .bullet {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #FF2B06;
+  margin: 20px auto;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.nav-bullets .bullet:hover .tooltip {
+  display: block;
+}
+.nav-bullets .bullet .tooltip {
+  padding: 8px 10px;
+  right: 32px;
+  top: -10px;
+  color: #FFFFFF;
+  position: absolute;
+  background-color: #FF2B06;
+  width: 100px;
+  text-align: center;
+  display: none;
+}
+.nav-bullets .bullet .tooltip::before {
+  content: "";
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent transparent #FF2B06;
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .about-tedx {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -207,141 +308,6 @@ header .navbar-menu .menu-toggle span:last-child {
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
-.sponsors {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  margin-bottom: 6rem;
-}
-.sponsors h5 {
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 2.56rem;
-  color: #FFFFFF;
-  text-align: center;
-  padding-bottom: 3.5rem;
-}
-.sponsors .sponsors-list {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  justify-items: center;
-}
-.sponsors .sponsors-list img {
-  width: 90px;
-  height: 90px;
-}
-
-@keyframes scale {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-.nav-bullets {
-  position: fixed;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  z-index: 1000;
-}
-.nav-bullets .bullet {
-  width: 20px;
-  height: 20px;
-  border: 3px solid var(--primary-color);
-  margin: 20px auto;
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
-}
-.nav-bullets .bullet:hover .tooltip {
-  display: block;
-}
-.nav-bullets .bullet .tooltip {
-  padding: 8px 10px;
-  right: 32px;
-  top: -10px;
-  color: #FFFFFF;
-  position: absolute;
-  background-color: #FF2B06;
-  width: 100px;
-  text-align: center;
-  display: none;
-}
-.nav-bullets .bullet .tooltip::before {
-  content: "";
-  border-style: solid;
-  border-width: 10px;
-  border-color: transparent transparent transparent #FF2B06;
-  height: 0;
-  width: 0;
-  position: absolute;
-  right: -20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.landing {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-.landing .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.landing .intro-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.intro-text h1 {
-  flex-wrap: nowrap;
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.8rem;
-  color: #FFFFFF;
-  margin-top: 5rem;
-  max-width: 100%;
-}
-.intro-text p {
-  font-family: "Lato", sans-serif;
-  width: 70%;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 180%;
-  color: #828282;
-  max-width: 100%;
-  text-align: justify;
-}
-.intro-text .btn {
-  width: 180px;
-  height: 48px;
-  color: #FF2B06;
-  background-color: transparent;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 180%;
-  border: 1px solid var(--primary-color);
-  margin-top: 2rem;
-  border-radius: 2rem;
-  cursor: pointer;
-}
-
-.intro-vector img {
-  width: 400px;
-  height: 424px;
-  animation: scale 3s ease-in-out infinite;
-}
-
 .speakers-slide .speaker-1 {
   display: flex;
   flex-direction: column;
@@ -446,6 +412,32 @@ header .navbar-menu .menu-toggle span:last-child {
   color: #FFFFFF;
 }
 
+.sponsors {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 6rem;
+}
+.sponsors h5 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.56rem;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 3.5rem;
+}
+.sponsors .sponsors-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+}
+.sponsors .sponsors-list img {
+  width: 90px;
+  height: 90px;
+}
+
 footer {
   background-color: #101010;
   height: 350px;
@@ -498,6 +490,14 @@ footer .footer-content .footer-social-links i {
   height: 1.5rem;
 }
 
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 @media (max-width: 676px) {
   .container {
     width: calc(100% + 10px);

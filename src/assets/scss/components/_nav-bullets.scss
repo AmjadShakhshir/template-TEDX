@@ -1,0 +1,45 @@
+.nav-bullets {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	z-index: 1000;
+	.bullet {
+		width: 20px;
+		height: 20px;
+		border: 3px solid colors.$color_primary;
+		margin: 20px auto;
+		border-radius: 50%;
+		cursor: pointer;
+		position: relative;
+		&:hover {
+			.tooltip {
+				display: block;
+			}
+		}
+		.tooltip {
+			padding: 8px 10px;
+			right: 32px;
+			top: -10px;
+			color: colors.$color_white;
+			position: absolute;
+			background-color: colors.$background-color_4;
+			width: 100px;
+			text-align: center;
+			display: none;
+			&::before {
+				content: '';
+				border-style: solid;
+				border-width: 10px;
+				border-color: colors.$border-color_2;
+				height: 0;
+				width: 0;
+				position: absolute;
+				right: -20px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
