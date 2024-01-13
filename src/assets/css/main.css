@@ -63,14 +63,6 @@ ul {
   border-radius: 24px;
 }
 
-@keyframes scale {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
 .upcoming-tedx {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -143,6 +135,14 @@ ul {
   color: #FFFFFF;
 }
 
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 .speakers {
   padding-top: 6rem;
   padding-bottom: 6rem;
