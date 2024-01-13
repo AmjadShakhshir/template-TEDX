@@ -1,0 +1,20 @@
+{
+  "name": "template-tedx",
+  "version": "1.0.0",
+  "description": "![Github_All_Releases](https://img.shields.io/badge/-CSS-rgba(38%2C%2077%2C%20228)?style=flat-square&logo=css3) ![Github_All_Releases](https://img.shields.io/badge/-HTML-rgba(240%2C%20101%2C%2041)?style=flat-square&logo=html5&logoColor=white) # TEDx Template project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/assets/scss/main.scss src/assets/css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmjadShakhshir/template-TEDX.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmjadShakhshir/template-TEDX/issues"
+  },
+  "homepage": "https://github.com/AmjadShakhshir/template-TEDX#readme"
+}
