@@ -162,14 +162,6 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
-@keyframes scale {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
 .sponsors {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -196,6 +188,14 @@ ul {
   height: 90px;
 }
 
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 header {
   padding: 20px;
 }

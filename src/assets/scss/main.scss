@@ -5,6 +5,7 @@
 @import "./components/about";
 @import "./components/upcoming";
 @import "./components/speakers";
+@import "./components/sponsors";
 
 @keyframes scale {
 	0%,100% {
@@ -15,33 +16,6 @@
 	}
 }
 
-
-
-.sponsors {
-	h5 {
-		font-family: fonts.$font-family_1;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 2rem;
-		line-height: 2.56rem;
-		color: colors.$color_white;
-		text-align: center;
-		padding-bottom: 3.5rem;
-	}
-	padding-top: 6rem;
-	padding-bottom: 6rem;
-	margin-bottom: 6rem;
-	.sponsors-list {
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-		justify-items: center;
-		img {
-			width: 90px;
-			height: 90px;
-		}
-	}
-}
 header {
 	padding: 20px;
 	.header-container {
