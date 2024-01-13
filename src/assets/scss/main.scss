@@ -2,6 +2,7 @@
 @use "./variables/fonts";
 
 @import "./components/reset";
+@import "./components/header";
 @import "./components/about";
 @import "./components/upcoming";
 @import "./components/speakers";
@@ -16,52 +17,7 @@
 	}
 }
 
-header {
-	padding: 20px;
-	.header-container {
-		margin: 0 50px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.logo {
-		width: 200px;
-		height: 100px;
-	}
-	.navbar-menu {
-		ul {
-			display: none;
-			li {
-				padding: 15px;
-				a {
-					color: colors.$color_white;
-				}
-			}
-		}
-		.menu-toggle {
-			width: 30px;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: flex-end;
-			cursor: pointer;
-			span {
-				height: 2px;
-				background-color: colors.$background-color_2;
-				margin-bottom: 5px;
-				&:first-child {
-					width: 100%;
-				}
-				&:nth-child(2) {
-					width: 60%;
-					transition: .3s;
-				}
-				&:last-child {
-					width: 100%;
-				}
-			}
-		}
-	}
-}
+
 .nav-bullets {
 	position: fixed;
 	right: 0;

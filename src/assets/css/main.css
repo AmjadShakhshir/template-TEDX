@@ -23,6 +23,51 @@ ul {
   margin-right: auto;
 }
 
+header {
+  padding: 20px;
+}
+header .header-container {
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  width: 200px;
+  height: 100px;
+}
+header .navbar-menu ul {
+  display: none;
+}
+header .navbar-menu ul li {
+  padding: 15px;
+}
+header .navbar-menu ul li a {
+  color: #FFFFFF;
+}
+header .navbar-menu .menu-toggle {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+header .navbar-menu .menu-toggle span {
+  height: 2px;
+  background-color: #f6f6f6;
+  margin-bottom: 5px;
+}
+header .navbar-menu .menu-toggle span:first-child {
+  width: 100%;
+}
+header .navbar-menu .menu-toggle span:nth-child(2) {
+  width: 60%;
+  transition: 0.3s;
+}
+header .navbar-menu .menu-toggle span:last-child {
+  width: 100%;
+}
+
 .about-tedx {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -196,51 +241,6 @@ ul {
     transform: scale(1.1);
   }
 }
-header {
-  padding: 20px;
-}
-header .header-container {
-  margin: 0 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .logo {
-  width: 200px;
-  height: 100px;
-}
-header .navbar-menu ul {
-  display: none;
-}
-header .navbar-menu ul li {
-  padding: 15px;
-}
-header .navbar-menu ul li a {
-  color: #FFFFFF;
-}
-header .navbar-menu .menu-toggle {
-  width: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  cursor: pointer;
-}
-header .navbar-menu .menu-toggle span {
-  height: 2px;
-  background-color: #f6f6f6;
-  margin-bottom: 5px;
-}
-header .navbar-menu .menu-toggle span:first-child {
-  width: 100%;
-}
-header .navbar-menu .menu-toggle span:nth-child(2) {
-  width: 60%;
-  transition: 0.3s;
-}
-header .navbar-menu .menu-toggle span:last-child {
-  width: 100%;
-}
-
 .nav-bullets {
   position: fixed;
   right: 0;
