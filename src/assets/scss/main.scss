@@ -4,6 +4,7 @@
 @import "./components/reset";
 @import "./components/about";
 @import "./components/upcoming";
+@import "./components/speakers";
 
 @keyframes scale {
 	0%,100% {
@@ -15,32 +16,7 @@
 }
 
 
-.speakers {
-	h4 {
-		font-family: fonts.$font-family_1;
-		font-style: normal;
-		font-weight: 700;
-		font-size: 2rem;
-		line-height: 2.56rem;
-		color: colors.$color_white;
-		text-align: center;
-		padding-bottom: 3.5rem;
-	}
-	padding-top: 6rem;
-	padding-bottom: 6rem;
-	.container {
-		display: flex;
-		flex-direction: column;
-		padding: 0 5rem;
-	}
-	.speakers-slide {
-		display: grid;
-		gap: 1rem;
-		justify-content: center;
-		align-items: center;
-		grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
-	}
-}
+
 .sponsors {
 	h5 {
 		font-family: fonts.$font-family_1;
